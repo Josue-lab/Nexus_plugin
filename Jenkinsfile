@@ -7,6 +7,7 @@ pipeline {
         stage("Nexus-Repo"){
             steps {
                 script {
+                    sh "chmod u+x nexus.sh" 
                     sh "./nexus.sh"
                 }
             }
