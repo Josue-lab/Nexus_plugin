@@ -8,7 +8,7 @@ pipeline {
             steps {
                 script {
                     sh "chmod u+x nexus.sh" 
-                    sh "./nexus.sh"
+                    sh "nexus.sh"
                 }
             }
         }
